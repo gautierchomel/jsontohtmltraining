@@ -20,6 +20,6 @@ jobs:
           json-file-path: ".cache/data.json"
           github-token: ${{ secrets.GITHUB_TOKEN }}
           columns: 3
-          file-to-use: "profiles.md"
+          file-to-use: "localisations.html"
           object-field-names: '[ "username", "name", "image", "issueId" ]'
           html-cell: '<td align="center"><p><a href="https://github.com/{{ username }}">{{ name }}</a></p><img src="{{ image }}" alt="GitHub profile of {{ name }}" /><p><a href="https://github.com/EddieHubCommunity/awesome-github-profiles/issues/{{ issueId }}">(💯 give your vote)</a></p></td>'

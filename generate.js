@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 fs.readdir(
-  path.join(__dirname, "profiles"),
+  path.join(__dirname, "localisations"),
   {
     withFileTypes: true,
   },
@@ -16,7 +16,7 @@ fs.readdir(
     fs.mkdir(path.join(__dirname, ".cache"), { recursive: true }, () => {});
 
     files.forEach((file) => {
-      const profile = require(path.join(__dirname, "profiles", file.name));
+      const profile = require(path.join(__dirname, "localisations", file.name));
 
       profiles.push(profile);
     });
