@@ -2,8 +2,7 @@
     "name": "tf",
     "lang": en,
     "desc": "test description",
-    "1": {
-        "1origin": "A",
-        "1local": "B"
-      }
+    "1origin": "A",
+    "1local": "B"
+
   }
