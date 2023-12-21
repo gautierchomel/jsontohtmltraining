@@ -22,4 +22,4 @@ jobs:
           columns: 3
           file-to-use: "localisations.html"
           object-field-names: '[ "name", "lang", "desc", "1" ]'
-          html-cell: '<td>{{ name }}</td><td>{{ lang }}</td><td>{{ desc }}</td><td>{{ 1local }}</td>'
+          html-cell: '<h2>{{ lang }} by {{ name }}</h2><p>{{ desc }}</p><details><summary>See {{ lang }} by {{ name }} localisation proposals</summary><ul><li> {{ 1locale }}</li></ul></details>'
